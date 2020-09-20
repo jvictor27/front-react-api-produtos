@@ -8,7 +8,7 @@ module.exports = {
         filename: './app.js'
     },
     devServer: {
-        port: 8080,
+        port: 8000,
         contentBase: './public'
     },
     resolve: {
@@ -32,18 +32,17 @@ module.exports = {
             test: /.js[x]?$/,
             loader: 'babel-loader',
             exclude: /node_modules/,
-            querys: {
+            query: {
                 presets: ['es2015', 'react'],
                 plugins: ['transform-object-rest-spread']
-            },
-            {
+            }
+        },  {
                 test: /\.css$/,
                 loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
-            },
-            {
+        }, {
                 test: /\.woff|.woff2|.tff|.eot|.svg|.png|.jpg*.*$/,
                 loader: 'file'
-            }
+            
         }]
     }
 }
