@@ -2,10 +2,10 @@ import React from 'react'
 import { Router, Route, Redirect, hashHistory } from 'react-router'
 
 import Dashboard from '../dashboard/dashboards'
-import Categoria from '../categoria/categoria'
-import TipoOpcao from '../tipoOpcao/tipoOpcao'
-import Opcao from '../opcao/opcao'
-import Produto from '../produto/produto'
+import Categoria from '../categoria/categorias'
+import TipoOpcao from '../tipoOpcao/tiposOpcoes'
+import Opcao from '../opcao/opcoes'
+import Produto from '../produto/produtos'
 
 export default props => (
     <Router history={hashHistory}>
