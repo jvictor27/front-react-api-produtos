@@ -10,10 +10,10 @@ import Produto from '../produto/produto'
 export default props => (
     <Router history={hashHistory}>
         <Route path='/' component={Dashboard} />
-        <Route path='/categorias' component={Categoria} />
-        <Route path='/tiposOpcoes' component={TipoOpcao} />
-        <Route path='/opcoes' component={Opcao} />
-        <Route path='/produtos' component={Produto} />
+        <Route path='catalogo/categoria' component={Categoria} />
+        <Route path='catalogo/tipoOpcao' component={TipoOpcao} />
+        <Route path='catalogo/opcao' component={Opcao} />
+        <Route path='catalogo/produto' component={Produto} />
         <Redirect from='*' to='/' />
     </Router>
 )
